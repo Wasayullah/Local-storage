@@ -20,7 +20,7 @@ const signup = () => {
         icon: "success",
     });
     document.querySelector(".swal2-confirm").addEventListener("click", () => {
-    window.location.href = "Signin.html";
+    window.location.href = "signin.html";
 });
 }
 checkEmail = document.getElementById("lemail")
