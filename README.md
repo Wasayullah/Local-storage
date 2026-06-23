@@ -78,5 +78,3 @@ This project stores data in browser Local Storage and is intended for learning p
 ## Author
 
 **Mohammad Wasayullah**
-
-Made with ❤️ using JavaScript.
