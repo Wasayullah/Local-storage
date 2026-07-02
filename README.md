@@ -5,7 +5,10 @@ A practical, beginner-friendly JavaScript project demonstrating how to use the b
 The project includes user registration, login, validation, session handling, and a modern responsive UI. It is designed to help beginners understand how client-side authentication works while learning core JavaScript concepts.
 
 ---
+- **Vercel:** https://auth-549.vercel.app/
+- **Vercel:** https://multiuser-auth-549.vercel.app/
 
+---
 ## ✨ Features
 
 * Multi-User Registration (Sign Up)
