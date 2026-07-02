@@ -39,7 +39,7 @@ const signin = () => {
             title: "Invalid Credentials!",
             text: "Try again",
             icon: "error",
-            footer: "<a style='color:#7066e0' href='signup.html'>Don't have account?</a>"
+            footer: "<a style='color:#7066e0' href='index.html'>Don't have account?</a>"
         });
     }
 }
