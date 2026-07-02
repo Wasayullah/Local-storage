@@ -8,15 +8,26 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
+.container {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .main {
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     background: rgba(255, 255, 255, .15);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -29,6 +40,7 @@ body {
     gap: 10px;
     animation: fade .6s ease;
 }
+
 
 @keyframes fade {
     from {
@@ -43,16 +55,18 @@ body {
 }
 
 h3  ,h2 {
-    /* position: absolute; */
-    /* top: 80px; */
     color: white;
     font-size: 34px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 h3  {
-    position: absolute; 
-    top: 50px; 
+
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    box-shadow: 0 10px 25px rgba(0, 114, 255, .35);
+    padding:13px;
+    border-radius: 50%;
+    margin-bottom: 10px;
     }
 label {
     color: white;
@@ -138,12 +152,81 @@ a{
 footer{
     color: black;
 }
-.copyrights {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+.copyrights{
     width: 100%;
     text-align: center;
-    color: white;
-    padding: 15px 0;
+    margin-top: 25px;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 14px;
+}
+/* Tablet */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .main {
+        max-width: 100%;
+        padding: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .main {
+        max-width: 100%;
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    input,
+    .btn,
+    a {
+        font-size: 16px; /* Prevents iOS zoom */
+        padding: 12px;
+    }
+
+    img {
+        width: 120px;
+        margin: 0 auto;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 320px) {
+    .main {
+        padding: 20px 15px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    input,
+    .btn,
+    a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    img {
+        width: 90px;
+    }
 }
