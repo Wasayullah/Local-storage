@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <h3>
+    <i class="fa-solid fa-user-plus"></i>
+    </h3><br>
+    <div class="main">
+        <h2>Signup</h2>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="signupName" placeholder="John Doe">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="signupEmail" placeholder="abc@gmail.com">
+        <label for="pass">password</label>
+        <input type="password" name="pass" id="signupPass"><br>
+        <div class="btn" onclick="Signup()">Signup</div><br>
+        <a class="login" href="login.html" >Go to Login</a>
+    </div>
+        <footer class="copyrights">
+        <p>
+            <i class="fas fa-code"></i> Developer Mohammad wasayullah <br> &copy; All rights reserved 2026
+        </p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
